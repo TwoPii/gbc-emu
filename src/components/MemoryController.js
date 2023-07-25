@@ -76,7 +76,7 @@ class MemoryController {
         }
     }
 
-    save_state(file) {
+    save_state(stream) {
         
     }
 
