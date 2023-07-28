@@ -12,6 +12,7 @@ function subscribeToUpload() {
             var content = e.target.result;
             let emu = new Emulator();
             emu.memory.loadROM(content);
+            emu.run();
         }
         reader.readAsArrayBuffer(file);
     })

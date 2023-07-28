@@ -22,6 +22,20 @@ class CPU {
         this.reg_SP = 0xFFFE;
         this.reg_PC = 0x100;
     }
+
+    parseOPCode(code) {
+        let value = this.memory.read(this.reg_PC + 1);
+        let value2 = this.memory.read(this.reg_PC + 2);
+        
+        console.log('operating with: ' + code)
+        // Working on instruction set.
+        switch (code) {
+            case 0x7F: 
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 export default CPU;
